@@ -21,8 +21,6 @@ namespace CSharpExample_MD.Types
 
         public string TradeCondition { get; set; }
 
-        public TradeAction Action { get; set; }
+        public string Action { get; set; }
     }
-
-    public enum TradeAction { Undefined, New, Cancel, Cancelled }
 }

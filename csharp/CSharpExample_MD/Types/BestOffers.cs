@@ -23,11 +23,11 @@ namespace CSharpExample_MD.Types
         public double BestAskQty { get; set; }
         public double BestAskPrice { get; set; }
         public double? AuctionPrice { get; set; }
-        public char AuctionImbalanceSide { get; set; }
+        public string AuctionImbalanceSide { get; set; }
         public double? AuctionImbalanceVolume { get; set; }
         public double? AuctionVolume { get; set; }
         public DateTime? EstimatedTradingSessionOpenTime { get; set; }
-        public TradingSession TradingSession { get; set; }
+        public string TradingSession { get; set; }
         public double ClosePriceDay { get; set; }
         public double AdjustPrice { get; set; }
         public double AdjustPriceDay { get; set; }
@@ -45,6 +45,4 @@ namespace CSharpExample_MD.Types
         public double? OpenInterest { get; set; }
         public long? AvgDailyTradedQty { get; set; }
     }
-
-    public enum TradingSession { Undefined = 0, RegularDaySession = 1, AfterHours = 6 };
 }
